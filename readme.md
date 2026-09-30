@@ -9,6 +9,8 @@ The board combines the main YaSolR logic and control hardware on a single PCB an
 
 Only the voltage regulator and optional bypass relay remain external.
 
+![PCB](Images/pcb.png)
+
 ## Features
 
 - YaSolR “The Professional” configuration
@@ -23,6 +25,8 @@ Only the voltage regulator and optional bypass relay remain external.
 - External bypass relay output
 - Fused mains input
 - No external ZCD required
+- Fully through-hole PCB, easy to solder
+- 3x 2.54 mm 5 V headers for additional devices such as a fan or extra logic
 
 ## Required Parts
 
@@ -33,6 +37,9 @@ Only the voltage regulator and optional bypass relay remain external.
 - LilyGO T-ETH-Lite S3
 - 3× 330 Ω resistor
 - 1× 4.7 kΩ resistor
+- 1× 5 mm green LED
+- 1× 5 mm orange LED
+- 1× 5 mm red LED
 - SSD1306 OLED
 - 2N2222 transistor
 - JSY-MK-194T
@@ -80,8 +87,14 @@ The board was manufactured by **JLCPCB** using:
 
 In my installation, the PCB is mounted together with the **LSA-H3P50YB** and the external bypass relay on DIN rail.
 
-For the PCB I use a:
+For the PCB I use a:  
 **PM107, Length 150 mm DIN-rail PCB holder**
+
+## Programming Note
+
+It is possible that the 5 V supply from your programmer does not provide enough current to reliably program the T-ETH-Lite.
+
+In that case, you can power the PCB from its own mains supply while programming, **as long as your programmer is 5 V compatible**.
 
 ## Performance
 
